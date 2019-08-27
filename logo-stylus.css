@@ -1,0 +1,126 @@
+.menu-app {
+  background: url("logos-aplicativos-75x75.png");
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  margin-top: 3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-description  {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  content: "hello";
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    content: "hello";
+  }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  text-transform: uppercase;
+}
+
+/* .tooltip:hover .tooltip-description {
+  visibility: visible;
+  text-transform: uppercase;
+} */
+
+#agora {
+  background-position: 0px 0px;
+}
+
+#kronos {
+  background-position: -75px 0px;
+}
+
+#resoluciones {
+  background-position: -150px 0px;
+}
+
+#kyron {
+  background-position: -225px 0px;
+}
+
+#sga {
+  background-position: -300px 0px;
+}
+
+#argo {
+  background-position: -375px 0px;
+}
+
+#arka {
+  background-position: -450px 0px;
+}
+
+#oikos {
+  background-position: -525px 0px;
+}
+
+#temis {
+  background-position: -600px 0px;
+}
+
+#cumplidos {
+  background-position: -675px 0px;
+}
+
+#sisifo {
+  background-position: -750px 0px;
+}
+
+#titan {
+  background-position: -825px 0px;
+}
+
+#polux {
+  background-position: -900px 0px;
+}
+
+#jano {
+  background-position: -975px 0px;
+}
+
+#perseo {
+  background-position: -1050px 0px;
+}
