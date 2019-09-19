@@ -12,19 +12,11 @@ pipeline:
     image: node:12.6.0
     commands:
      - node --version
-     - ls -la
+     - mkdir dist
+     - cp *.css dist
+     - cp *.png dist
     when:
       branch: [test]
-      event: [push, pull_request]
-      
-  nodejs:  
-    image: node:12.6.0
-    commands:
-     - node --version
-     - npm i
-     - npm run build:prod
-    when:
-      branch: [master]
       event: [push, pull_request]
 
   # upload app.zip to s3 bucket for CodePipline
@@ -33,25 +25,12 @@ pipeline:
     secrets: [ aws_access_key_id, aws_secret_access_key ]
     region: "us-east-1"    
     bucket: "cliente-pruebas"
-    source: /**/*
-    target: /pruebas${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
-    strip_prefix: /**/*
-    when:
-      branch: [test]
-      event: [push, pull_request] 
-    
-  # upload app.zip to s3 bucket for CodePipline
-  publish_s3:
-    image: plugins/s3
-    secrets: [ aws_access_key_id, aws_secret_access_key ]
-    region: "us-east-1"    
-    bucket: "cliente-prod"
     source: dist/**/*
-    target: /${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
+    target: /pruebas${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
     strip_prefix: dist/
     when:
-      branch: [master]
-      event: [push, pull_request] 
+      branch: [test]
+      event: [push, pull_request]
 
   #Notify results to telegram
   notify_telegram:
