@@ -6,6 +6,14 @@ workspace:
       event: [push, pull_request]
 
 pipeline:
+
+  nodejs:
+  image: node:12.6.0
+  commands:
+    - ls -la
+  when:
+    branch: [test, master]
+    event: [push, pull_request]
    
   # upload app.zip to s3 bucket for CodePipline
   publish_s3:
@@ -15,9 +23,8 @@ pipeline:
     bucket: "cliente-prod"
     source: /**/*
     target: /${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
-    strip_prefix: /
     when:
-      branch: [master]
+      branch: [test, master]
       event: [push, pull_request] 
 
   #Notify results to telegram
