@@ -6,9 +6,7 @@
     background-repeat: no-repeat;
     cursor: pointer;
     border: 2px solid;
-    border-color: #BCCAD9;
     border-radius: 30px;
-    -moz-transform: scale(0.6);
 }
 
 .tooltip {
