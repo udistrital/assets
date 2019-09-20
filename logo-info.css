@@ -1,14 +1,13 @@
-.menu-app {
-    background: url("https://assets-oas.s3.amazonaws.com/logos-aplicativos-75x75.png");
+.menu-app-info {
+    background: url("https://pruebasassets.portaloas.udistrital.edu.co/Logos-nuevos-aplicativos-vertical.png");
     display: inline-block;
-    height: 75px;
-    width: 75px;
-    margin-top: 3px;
+    height: 286px;
+    width: 1009px;
     background-repeat: no-repeat;
     cursor: pointer;
     border: 2px solid;
     border-color: #BCCAD9;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 .tooltip {
@@ -60,62 +59,62 @@
     text-transform: uppercase;
 }
 
-#agora {
+#agora-info {
     background-position: 0px 0px;
 }
 
-#kronos {
-    background-position: -75px 0px;
+#argo-info {
+    background-position: 0px -286px;
 }
 
-#resoluciones {
-    background-position: -150px 0px;
+#arka-info {
+    background-position: 0px -572px;
 }
 
-#kyron {
-    background-position: -225px 0px;
+#cumplidos-info {
+    background-position: 0px -858px;
 }
 
-#sga {
-    background-position: -300px 0px;
+#jano-info {
+    background-position: 0px -1144px;
 }
 
-#argo {
-    background-position: -375px 0px;
+#kronos-info {
+    background-position: 0px -1430px;
 }
 
-#arka {
-    background-position: -450px 0px;
+#kyron-info {
+    background-position: 0px -1716px;
 }
 
-#oikos {
-    background-position: -525px 0px;
+#oikos-info {
+    background-position: 0px -2002px;
 }
 
-#temis {
-    background-position: -600px 0px;
+#perseo-info {
+    background-position: 0px -2288px;
 }
 
-#cumplidos {
-    background-position: -675px 0px;
+#polux-info {
+    background-position: 0px -2574px;
 }
 
-#sisifo {
-    background-position: -750px 0px;
+#resoluciones-info {
+    background-position: 0px -2860px;
 }
 
-#titan {
-    background-position: -825px 0px;
+#sga-info {
+    background-position: 0px -3146px;
 }
 
-#polux {
-    background-position: -900px 0px;
+#sisifo-info {
+    background-position: 0px -3432px;
 }
 
-#jano {
-    background-position: -975px 0px;
+#temis-info {
+    background-position: 0px -3718px;
 }
 
-#perseo {
-    background-position: -1050px 0px;
+#titan-info {
+    background-position: 0px -4004px;
 }
