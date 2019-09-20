@@ -1,12 +1,10 @@
 .menu-app-info {
     background: url("https://pruebasassets.portaloas.udistrital.edu.co/Logos-nuevos-aplicativos-vertical-240.png");
     display: inline-block;
-    height: 286px;
-    width: 1009px;
+    height: 68px;
+    width: 240px;
     background-repeat: no-repeat;
     cursor: pointer;
-    border: 2px solid;
-    border-radius: 30px;
 }
 
 .tooltip {
