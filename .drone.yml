@@ -15,6 +15,7 @@ pipeline:
      - mkdir dist
      - cp *.css dist
      - cp *.png dist
+     - cp *.json dist
     when:
       branch: [test]
       event: [push, pull_request]
