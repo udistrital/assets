@@ -1,0 +1,145 @@
+.isotipo {
+    background: url("https://pruebasassets.portaloas.udistrital.edu.co/isotipos-60x60.png");
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #BCCAD9;
+    border-radius: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-description {
+    visibility: hidden;
+    width: 120px;
+    background-color: #BCCAD9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: -15%;
+    content: "hello";
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #BCCAD9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: -15%;
+    content: "hello";
+}
+
+
+/* .tooltip:hover .tooltiptext {
+  visibility: visible;
+  text-transform: uppercase;
+} */
+
+.tooltip:hover .tooltip-description {
+    visibility: visible;
+    text-transform: uppercase;
+}
+
+#agora-isotipo {
+    background-position: -60px 0px;
+}
+
+#kronos-isotipo {
+    background-position: -120px 0px;
+}
+
+#resoluciones-isotipo {
+    background-position: -180px 0px;
+}
+
+#kyron-isotipo {
+    background-position: -240px 0px;
+}
+
+#sga-isotipo {
+    background-position: -300px 0px;
+}
+
+#argo-isotipo {
+    background-position: -360px 0px;
+}
+
+#arka-isotipo {
+    background-position: -420px 0px;
+}
+
+#oikos-isotipo {
+    background-position: -480px 0px;
+}
+
+#temis-isotipo {
+    background-position: -540px 0px;
+}
+
+#cumplidos-isotipo {
+    background-position: -600px 0px;
+}
+
+#sisifo-isotipo {
+    background-position: -660px 0px;
+}
+
+#titan-isotipo {
+    background-position: -720px 0px;
+}
+
+#polux-isotipo {
+    background-position: -780px 0px;
+}
+
+#jano-isotipo {
+    background-position: -840px 0px;
+}
+
+#perseo-isotipo {
+    background-position: -900px 0px;
+}
+
+#core-isotipo {
+    background-position: -960px 0px;
+}
+
+#apea-isotipo {
+    background-position: -1020px 0px;
+}
+
+#spagobi-isotipo {
+    background-position: -1080px 0px;
+}
+
+#campus-isotipo {
+    background-position: -1140px 0px;
+}
+
+#cirene-isotipo {
+    background-position: -1200px 0px;
+}
+
+#siciud-isotipo {
+    background-position: -1260px 0px;
+}

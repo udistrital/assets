@@ -1,0 +1,145 @@
+.menu-app-info {
+    background: url("https://pruebasassets.portaloas.udistrital.edu.co/Logos-nuevos-aplicativos-vertical-212x60.png");
+    display: inline-block;
+    height: 68px;
+    width: 240px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-description {
+    visibility: hidden;
+    width: 120px;
+    background-color: #BCCAD9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: -15%;
+    content: "hello";
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #BCCAD9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: -15%;
+    content: "hello";
+}
+
+
+/* .tooltip:hover .tooltiptext {
+    visibility: visible;
+    text-transform: uppercase;
+  } */
+
+.tooltip:hover .tooltip-description {
+    visibility: visible;
+    text-transform: uppercase;
+}
+
+#agora-header {
+    background-position: 0px 0px;
+}
+
+#argo-header {
+    background-position: 0px -60px;
+}
+
+#arka-header {
+    background-position: 0px -120px;
+}
+
+#cumplidos-header {
+    background-position: 0px -180px;
+}
+
+#jano-header {
+    background-position: 0px -240px;
+}
+
+#kronos-header {
+    background-position: 0px -300px;
+}
+
+#kyron-header {
+    background-position: 0px -360px;
+}
+
+#oikos-header {
+    background-position: 0px -420px;
+}
+
+#perseo-header {
+    background-position: 0px -480px;
+}
+
+#polux-header {
+    background-position: 0px -540px;
+}
+
+#resoluciones-header {
+    background-position: 0px -600px;
+}
+
+#sga-header {
+    background-position: 0px -660px;
+}
+
+#sisifo-header {
+    background-position: 0px -720px;
+}
+
+#temis-header {
+    background-position: 0px -780px;
+}
+
+#titan-header {
+    background-position: 0px -840px;
+}
+
+#spagobi-header {
+    background-position: 0px -900px;
+}
+
+#cirene-header {
+    background-position: 0px -960px;
+}
+
+#apea-header {
+    background-position: 0px -1020px;
+}
+
+#siciud-header {
+    background-position: 0px -1080px;
+}
+
+#core-header {
+    background-position: 0px -1140px;
+}
+
+#campus-header {
+    background-position: 0px -1200px;
+}
+
+#arkaII-header {
+    background-position: 0px -1260px;
+}
