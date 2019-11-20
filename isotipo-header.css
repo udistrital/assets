@@ -1,6 +1,6 @@
 .isotipo {
     background: url("https://pruebasassets.portaloas.udistrital.edu.co/isotipos-60x60.png");
-    display: inline-block;
+    display: none;
     height: 60px;
     width: 60px;
     background-repeat: no-repeat;
