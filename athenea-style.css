@@ -1,3 +1,15 @@
 :root {
-  --primary: rgb(57, 122, 24);
+  --primary: #397A18;
+  --color0: #62ECDE;
+  --color1: #C6D9BD;
+  --color2: #8DB37B;
+  --color3: #71A059;
+  --color4: #558D39;
+  --color5: #397A18;
+  --success-main: #006400;
+  --success-base: #228A22;
+  --success-accent:#58B158;
+  --warning-main: #8B0000;
+  --warning-base: #A82A2A;
+  --warning-accent: #C56262;
 }
