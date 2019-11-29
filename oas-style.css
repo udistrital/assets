@@ -3,15 +3,62 @@
 }
 
 a {
+  color: var(--color4);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
   color: var(--primary);
   text-decoration: none;
 }
 
 .modal-backdrop {
-  /* bug fix - no overlay */    
-  display: none;    
+  /* bug fix - no overlay */
+  display: none;
 }
 
+.md-headline {
+  color: var(--color5);
+}
+/* Forms and Buttons */
+
+.form-control {
+  border-color: var(--color2);
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: var(--color0);
+}
+
+.form-control:focus {
+  border-color: var(--color4);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--color2);
+}
+
+.ng-valid.ng-dirty {
+  border-color: var(--success-base);
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: var(--success-main);
+  border-color: var(--success-accent);
+}
+
+.btn-success {
+  color: #fff;
+  background-color: var(--success-base);
+  border-color: var(--success-main);
+}
+
+.md-button.md-default-theme.md-primary,
+.md-button.md-primary {
+  color: var(--color4);
+}
+/* End forms*/
 div.sticky {
   position: sticky;
   bottom: 0;
@@ -47,92 +94,8 @@ md-divider {
   margin: 8%;
   text-align: center;
 }
+
 /* TABLE UI-GRID*/
-
-.table-fixed thead {
-  width: 97%;
-}
-.table-fixed tbody {
-  height: 230px;
-  overflow-y: auto;
-  width: 100%;
-}
-.table-fixed thead,
-.table-fixed tbody,
-.table-fixed tr,
-.table-fixed td,
-.table-fixed th {
-  display: block;
-  background-color: var(--primary);
-}
-
-.ui-grid-header-cell {
-  background-color: var(--primary);
-  color: #fff;
-}
-
-.table-fixed tbody td,
-.table-fixed thead > tr > th {
-  float: left;
-  border-bottom-width: 0;
-}
-
-#mi-grid {
-  min-height: 50px !important;
-  width: auto !important;
-}
-
-/*clases para definir el tamaÃƒÂ±o (alto) de la fila en el grid segÃƒÂºn la cantidad de texto y el ancho de la columna*/
-.mi-grid .ui-grid-row,
-.mi-grid .ui-grid-cell {
-  height: auto !important;
-}
-
-.mi-grid .ui-grid-cell {
-  float: none;
-  display: table-cell;
-}
-/*clases para acomodar el grid al numero de filas contemplando sus tamaÃƒÂ±os.*/
-
-.mi-grid .ui-grid-viewport .ui-grid-cell-contents {
-  word-wrap: break-word;
-  white-space: normal !important;
-  overflow: visible;
-}
-
-.mi-grid .ui-grid-cell {
-  display: table-cell;
-  height: auto !important;
-  overflow: visible;
-  position: static;
-}
-
-.mi-grid .ui-grid-row {
-  height: auto;
-  display: table-row;
-  position: static;
-}
-
-.mi-grid .ui-grid-row div[role="row"] {
-  display: flex;
-  align-content: stretch;
-}
-.mi-grid .ui-grid,
-.mi-grid .ui-grid-viewport,
-.mi-grid .ui-grid-render-container-body,
-.mi-grid .ui-grid-canvas {
-  height: auto !important;
-}
-/*clases para posicionar el paginador debajo del grid */
-
-.mi-grid .ui-grid-pager-panel {
-  margin-bottom: -30px !important;
-}
-
-.mi-grid .ui-grid-pager-container {
-  float: none !important;
-  height: auto !important;
-}
 
 /*BUTTONS OPTIONS*/
 
@@ -167,7 +130,7 @@ legend {
 
 /* hace un resaltado azulado al pasar el mause sobre lo que contenga*/
 legend:hover {
-  background-color: var(--primary);
+  background-color: var(--color4);
   color: #fff;
   padding: 5px;
 }
@@ -522,7 +485,7 @@ table.dataTable thead .sorting:after {
 .panel-green .panel-heading {
   border-color: #5cb85c;
   color: #fff;
-  background-color: rgba(0, 62, 101, 1);
+  background-color:var(--primary);
 }
 
 .panel-green a {
@@ -540,7 +503,7 @@ table.dataTable thead .sorting:after {
 .panel-red .panel-heading {
   border-color: #d9534f;
   color: #fff;
-  background-color: rgba(0, 62, 101, 1) !important;
+  background-color:var(--primary) !important;
 }
 
 .panel-red a {
@@ -576,7 +539,7 @@ table.dataTable thead .sorting:after {
 
 .panel-default > .panel-heading {
   color: white;
-  background-color: var(--primary);
+  background-color: var(--color4);
   border-color: #ddd;
 }
 
