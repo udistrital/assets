@@ -5,6 +5,10 @@
   --color3: #AF7978;
   --color4: #873635;
   --color5: #731514;
-  --success: #337320;
-  --warning: #B22222;
+  --success-main: #337320;
+  --success-base: #68A356;
+  --success-accent:#104201;
+  --warning-main: #B22222;
+  --warning-base: #C95858;
+  --warning-accent: #B22222;
 }
