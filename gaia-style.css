@@ -1,3 +1,10 @@
 :root {
-  --primary: rgb(142, 40, 37);
+  --primary: #371514;
+  --color1: #EBDDDD;
+  --color2: #C39A9A;
+  --color3: #AF7978;
+  --color4: #873635;
+  --color5: #371514;
+  --success: #337320;
+  --warning: #B22222;
 }
