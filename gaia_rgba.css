@@ -1,0 +1,15 @@
+:root {
+  --primary: rgba(115, 21, 20, 1);
+  --color0: rgba(243, 235, 235, 1);
+  --color1: rgba(235, 221, 221, 1);
+  --color2: rgba(195, 154, 154, 1);
+  --color3: rgba(175, 121, 120, 1);
+  --color4: rgba(135, 54, 53, 1);
+  --color5: rgba(115, 21, 20, 1);
+  --success-main: rgba(51, 115, 32, 1);
+  --success-base: rgba(104, 163, 86, 1);
+  --success-accent: rgba(16, 66, 1, 1);
+  --warning-main: rgba(178, 34, 34, 1);
+  --warning-base: rgba(201, 88, 88, 1);
+  --warning-accent: rgba(178, 34, 34, 1);
+}
