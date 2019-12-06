@@ -14,7 +14,6 @@ pipeline:
      - node --version
      - mkdir dist
      - cp *.css dist
-     - cp _*.scss dist
      - cp *.png dist
      - cp *.json dist
     when:
