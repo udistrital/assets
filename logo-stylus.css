@@ -1,23 +1,23 @@
 .menu-app {
-  background: url("https://assets-oas.s3.amazonaws.com/logos-aplicativos-75x75.png");
-  display: inline-block;
-  height: 75px;
-  width: 75px;
-  margin-top: 3px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  border: 2px solid;
-  border-color: #BCCAD9;
-  border-radius: 5px;
+    background: url("https://pruebasassets.portaloas.udistrital.edu.co/isotipos-75x75.png");
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #BCCAD9;
+    border-radius: 5px;
 }
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltip-description  {
+.tooltip .tooltip-description {
     visibility: hidden;
     width: 120px;
     background-color: #BCCAD9;
@@ -25,14 +25,13 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: 95%;
     left: -15%;
     content: "hello";
-  }
+}
 
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -42,14 +41,14 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: 95%;
     left: -15%;
     content: "hello";
-  }
+}
+
 
 /* .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -57,66 +56,90 @@
 } */
 
 .tooltip:hover .tooltip-description {
-  visibility: visible;
-  text-transform: uppercase;
+    visibility: visible;
+    text-transform: uppercase;
 }
 
 #agora {
-  background-position: 0px 0px;
+    background-position: -75px 0px;
 }
 
 #kronos {
-  background-position: -75px 0px;
+    background-position: -150px 0px;
 }
 
 #resoluciones {
-  background-position: -150px 0px;
+    background-position: -225px 0px;
 }
 
 #kyron {
-  background-position: -225px 0px;
+    background-position: -300px 0px;
 }
 
 #sga {
-  background-position: -300px 0px;
+    background-position: -375px 0px;
 }
 
 #argo {
-  background-position: -375px 0px;
+    background-position: -450px 0px;
 }
 
 #arka {
-  background-position: -450px 0px;
+    background-position: -525px 0px;
 }
 
 #oikos {
-  background-position: -525px 0px;
+    background-position: -600px 0px;
 }
 
 #temis {
-  background-position: -600px 0px;
+    background-position: -675px 0px;
 }
 
 #cumplidos {
-  background-position: -675px 0px;
+    background-position: -750px 0px;
 }
 
 #sisifo {
-  background-position: -750px 0px;
+    background-position: -825px 0px;
 }
 
 #titan {
-  background-position: -825px 0px;
+    background-position: -900px 0px;
 }
 
 #polux {
-  background-position: -900px 0px;
+    background-position: -975px 0px;
 }
 
 #jano {
-  background-position: -975px 0px;
+    background-position: -1050px 0px;
 }
 
 #perseo {
-  background-position: -1050px 0px;
+    background-position: -1125px 0px;
+}
+
+#core {
+    background-position: -1200px 0px;
+}
+
+#apea {
+    background-position: -1275px 0px;
+}
+
+#spagobi {
+    background-position: -1350px 0px;
+}
+
+#campus {
+    background-position: -1425px 0px;
+}
+
+#cirene {
+    background-position: -1500px 0px;
+}
+
+#siciud {
+    background-position: -1575px 0px;
 }

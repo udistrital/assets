@@ -1,0 +1,43 @@
+:root {
+  --primary: #EA9330;
+
+  --color0: #FCEFE1;
+  --color1: #F9E0C3;
+  --color2: #F3C188;
+  --color3: #F0B16B;
+  --color4: #EDA24D;
+  --color5: #EA9330;
+  
+  --success-main: #608E22;
+  --success-base: #95B354;
+  --success-accent:#C6D8A1;
+  --warning-main: #D6492C;
+  --warning-base: #95B354;
+  --warning-accent: #EFB5A9;
+  
+  --color100: #FFEADC;
+  --color200: #FEDCC0;
+  --color300: #FDD3AE;
+  --color400: #FCC99D;
+  --color500: #FAC08B;
+  --color600: #F8B77A;
+  --color700: #F5AE68;
+  --color800: #F2A557;
+  --color900: #EE9C44;
+
+  --success-main: #74C778;
+  --success-base: #3DA85F;
+  --success-accent:#138A59;
+
+  --warning-main: #EFD79B;
+  --warning-base: #E4BD5A;
+  --warning-accent: #CCB304;
+
+  --danger-base: #DF887C;
+  --danger-main: #CD513F;
+  --danger-accent: #BA210A;
+
+  --others-base: #AED0F7;
+  --others-main: #6DAAF0;
+  --others-accent: #3087EA;
+}

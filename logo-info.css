@@ -1,0 +1,145 @@
+.menu-app-info {
+    background: url("https://pruebasassets.portaloas.udistrital.edu.co/Logos-nuevos-aplicativos-vertical-240.png");
+    display: inline-block;
+    height: 68px;
+    width: 240px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-description {
+    visibility: hidden;
+    width: 120px;
+    background-color: #BCCAD9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: -15%;
+    content: "hello";
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #BCCAD9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: -15%;
+    content: "hello";
+}
+
+
+/* .tooltip:hover .tooltiptext {
+    visibility: visible;
+    text-transform: uppercase;
+  } */
+
+.tooltip:hover .tooltip-description {
+    visibility: visible;
+    text-transform: uppercase;
+}
+
+#agora-info {
+    background-position: 0px 0px;
+}
+
+#argo-info {
+    background-position: 0px -68px;
+}
+
+#arka-info {
+    background-position: 0px -136px;
+}
+
+#cumplidos-info {
+    background-position: 0px -204px;
+}
+
+#jano-info {
+    background-position: 0px -272px;
+}
+
+#kronos-info {
+    background-position: 0px -340px;
+}
+
+#kyron-info {
+    background-position: 0px -408px;
+}
+
+#oikos-info {
+    background-position: 0px -476px;
+}
+
+#perseo-info {
+    background-position: 0px -544px;
+}
+
+#polux-info {
+    background-position: 0px -612px;
+}
+
+#resoluciones-info {
+    background-position: 0px -680px;
+}
+
+#sga-info {
+    background-position: 0px -748px;
+}
+
+#sisifo-info {
+    background-position: 0px -816px;
+}
+
+#temis-info {
+    background-position: 0px -884px;
+}
+
+#titan-info {
+    background-position: 0px -952px;
+}
+
+#spagobi-info {
+    background-position: 0px -1020px;
+}
+
+#cirene-info {
+    background-position: 0px -1088px;
+}
+
+#apea-info {
+    background-position: 0px -1156px;
+}
+
+#siciud-info {
+    background-position: 0px -1224px;
+}
+
+#core-info {
+    background-position: 0px -1292px;
+}
+
+#campus-info {
+    background-position: 0px -1360px;
+}
+
+#arkaII-info {
+    background-position: 0px -1428px;
+}
