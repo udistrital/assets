@@ -3,7 +3,7 @@
 }
 
 a {
-  color: var(--color4);
+  color: var(--color800);
   text-decoration: none;
 }
 a:hover,
@@ -18,7 +18,7 @@ a:focus {
 }
 
 .md-headline {
-  color: var(--color5);
+  color: var(--color900);
 }
 /* Forms and Buttons */
 
@@ -29,11 +29,11 @@ a:focus {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: var(--color0);
+  background-color: var(--color100);
 }
 
 .form-control:focus {
-  border-color: var(--color4);
+  border-color: var(--color800);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--color2);
 }
 
@@ -54,10 +54,51 @@ fieldset[disabled] .form-control {
   border-color: var(--success-main);
 }
 
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #000;
+  background-color: var(--warning-main);
+  border-color: var(--warning-accent);
+}
+
+.btn-warning {
+  color: #000;
+  background-color: var(--warning-base);
+  border-color: var(--warning-main);
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+  color: #fff;
+  background-color: var(--danger-main);
+  border-color: var(--danger-accent);
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: var(--danger-base);
+  border-color: var(--danger-main);
+}
+
+.btn-info:focus,
+.btn-info.focus {
+  color: #fff;
+  background-color: var(--others-main);
+  border-color: var(--others-accent);
+}
+
+.btn-info {
+  color: #fff;
+  background-color: var(--others-base);
+  border-color: var(--others-main);
+}
+
+
 .md-button.md-default-theme.md-primary,
 .md-button.md-primary {
-  color: var(--color4);
+  color: var(--color800);
 }
+
 /* End forms*/
 div.sticky {
   position: sticky;
@@ -118,8 +159,8 @@ md-divider {
 .page-header {
   padding-bottom: 0px;
   margin: 20px;
-  border-bottom: 1px solid var(--color0);
-  color: var(--color0);
+  border-bottom: 1px solid var(--color100);
+  color: var(--color100);
 }
 
 /*da color azulado al margen inferior de donde se utilice la etiqueta*/
@@ -130,7 +171,7 @@ legend {
 
 /* hace un resaltado azulado al pasar el mause sobre lo que contenga*/
 legend:hover {
-  background-color: var(--color4);
+  background-color: var(--color800);
   color: #fff;
   padding: 5px;
 }
@@ -146,7 +187,7 @@ legend:hover {
   font-size: 12.025px;
   font-weight: bold;
   white-space: nowrap;
-  color: #ffffff;
+  color: #fff;
   background-color: #999999;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
@@ -154,7 +195,7 @@ legend:hover {
 }
 
 .badge:hover {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -218,11 +259,11 @@ legend:hover {
 
 /*Clases generales para pintar imputs que utilizan ng-model e indicar el error*/
 .ng-invalid.ng-dirty {
-  border-color: red;
+  border-color: var(--danger-main);
 }
 
 .ng-valid.ng-dirty {
-  border-color: green;
+  border-color: var(--success-main);
 }
 
 .paddingtop-bottom {
@@ -332,19 +373,19 @@ legend:hover {
 }
 
 .btn-success.btn-outline {
-  color: #5cb85c;
+  color: var(--success-base);
 }
 
 .btn-info.btn-outline {
-  color: #5bc0de;
+  color: var(--others-base);
 }
 
 .btn-warning.btn-outline {
-  color: #fff;
+  color: var(--warning-base);
 }
 
 .btn-danger.btn-outline {
-  color: #d9534f;
+  color: var(--danger-base);
 }
 
 .btn-primary.btn-outline:hover,
@@ -479,57 +520,57 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-green {
-  border-color: #5cb85c;
+  border-color: var(--success-main);
 }
 
 .panel-green .panel-heading {
-  border-color: #5cb85c;
+  border-color: var(--success-base);
   color: #fff;
-  background-color:var(--primary);
+  background-color: var(--success-main);
 }
 
 .panel-green a {
-  color: #5cb85c;
+  color: var(--success-main);
 }
 
 .panel-green a:hover {
-  color: #3d8b3d;
+  color: var(--success-accent);
 }
 
 .panel-red {
-  border-color: #d9534f;
+  border-color: var(--danger-main);
 }
 
 .panel-red .panel-heading {
-  border-color: #d9534f;
+  border-color: var(--danger-base);
   color: #fff;
-  background-color:var(--primary) !important;
+  background-color: var(--danger-main);
 }
 
 .panel-red a {
-  color: #d9534f;
+  color: var(--danger-main);
 }
 
 .panel-red a:hover {
-  color: #b52b27;
+  color: var(--danger-accent);
 }
 
 .panel-yellow {
-  border-color: #f0ad4e;
+  border-color: var(--warning-main);
 }
 
 .panel-yellow .panel-heading {
-  border-color: #f0ad4e;
-  color: #fff;
-  background-color: #f0ad4e;
+  border-color: var(--warning-base);
+  color: #222;
+  background-color: var(--warning-main);
 }
 
 .panel-yellow a {
-  color: #f0ad4e;
+  color: var(--warning-main);
 }
 
 .panel-yellow a:hover {
-  color: #df8a13;
+  color: var(--warning-accent);
 }
 
 .codigo-panel {
@@ -538,9 +579,9 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-default > .panel-heading {
-  color: white;
-  background-color: var(--color4);
-  border-color: #ddd;
+  color: #fff;
+  background-color: var(--color800);
+  border-color: var(--color100);
 }
 
 @media (min-width: 768px) {
