@@ -88,7 +88,7 @@ steps:
           <b>Repo:</b><code>{{repo.name}}</code> <b>Branch:</b> <code>{{commit.branch}}</code>
           <b>Commit:</b> <a href="{{commit.link}}">{{truncate commit.sha 7}}</a>
           <b>Autor:</b>{{commit.author}} <code>&#128549 </code>
-        {{/success}}
+        {{/success}} 
     when:
       status: [success, failure]
       branch: [master, test]
