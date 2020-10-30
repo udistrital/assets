@@ -18,6 +18,7 @@ steps:
      - cp *.css dist
      - cp *.png dist
      - cp *.json dist
+     - cp *.ttf dist
     when:
       branch: [test]
       event: [push]
@@ -30,6 +31,7 @@ steps:
      - cp *.css dist
      - cp *.png dist
      - cp *.json dist
+     - cp *.ttf dist
     when:
       branch: [master]
       event: [push, pull_request]
