@@ -2,7 +2,7 @@ workspace:
   base: /go
   path: src/github.com/udistrital/${DRONE_REPO##udistrital/}
   when:
-      branch:
+    branch:
       - master
       - test
 kind: pipeline
@@ -13,12 +13,13 @@ steps:
   - name: nodejs
     image: node:12.6.0
     commands:
-     - node --version
-     - mkdir dist
-     - cp *.css dist
-     - cp *.png dist
-     - cp *.json dist
-     - cp *.ttf dist
+      - node --version
+      - mkdir dist
+      - cp *.css dist
+      - cp *.js dist
+      - cp *.png dist
+      - cp *.json dist
+      - cp *.ttf dist
     when:
       branch: [test]
       event: [push]
@@ -26,12 +27,13 @@ steps:
   - name: nodejs_prod
     image: node:12.6.0
     commands:
-     - node --version
-     - mkdir dist
-     - cp *.css dist
-     - cp *.png dist
-     - cp *.json dist
-     - cp *.ttf dist
+      - node --version
+      - mkdir dist
+      - cp *.css dist
+      - cp *.js dist
+      - cp *.png dist
+      - cp *.json dist
+      - cp *.ttf dist
     when:
       branch: [master]
       event: [push, pull_request]
@@ -44,16 +46,16 @@ steps:
         from_secret: aws_access_key_id
       secret_key:
         from_secret: aws_secret_access_key
-      region: "us-east-1"    
+      region: "us-east-1"
       bucket: "cliente-pruebas"
       source: dist/**/*
       target: /${DRONE_REPO_NAME}
       strip_prefix: dist/
     when:
       branch: [test]
-      event: [push, pull_request] 
+      event: [push, pull_request]
 
- # upload app.zip to s3 bucket for CodePipline
+  # upload app.zip to s3 bucket for CodePipline
   - name: publish_s3_prod
     image: plugins/s3
     settings:
@@ -61,14 +63,14 @@ steps:
         from_secret: aws_access_key_id
       secret_key:
         from_secret: aws_secret_access_key
-      region: "us-east-1"    
+      region: "us-east-1"
       bucket: "cliente-prod"
       source: dist/**/*
       target: /${DRONE_REPO_NAME}
       strip_prefix: dist/
     when:
       branch: [master]
-      event: [push, pull_request] 
+      event: [push, pull_request]
 
   #Notify results to telegram
   - name: notify_telegram
@@ -90,7 +92,7 @@ steps:
           <b>Repo:</b><code>{{repo.name}}</code> <b>Branch:</b> <code>{{commit.branch}}</code>
           <b>Commit:</b> <a href="{{commit.link}}">{{truncate commit.sha 7}}</a>
           <b>Autor:</b>{{commit.author}} <code>&#128549 </code>
-        {{/success}} 
+        {{/success}}
     when:
       status: [success, failure]
       branch: [master, test]
