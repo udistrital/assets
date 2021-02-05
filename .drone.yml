@@ -17,6 +17,7 @@ steps:
       - mkdir dist
       - cp *.css dist
       - cp *.js dist
+      - cp -r logotipos_aplicativos_svg dist/
       - cp *.png dist
       - cp *.json dist
       - cp *.ttf dist
@@ -32,6 +33,7 @@ steps:
       - cp *.css dist
       - cp *.js dist
       - cp *.png dist
+      - cp -r logotipos_aplicativos_svg dist/
       - cp *.json dist
       - cp *.ttf dist
     when:
