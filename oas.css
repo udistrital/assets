@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #f1f5f8;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.main-container {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 5.6rem;
+    height: calc(-165px + 100vh);
+    left: 0;
+    overflow: auto;
+}
+.main-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 2px;
+}
+.material-icons.md-18 {
+    font-size: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-30 {
+    font-size: 30px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+table thead {
+    border: 2px solid var(--color700);
+}
+table thead tr th {
+    background-color: var(--primary);
+    text-align: center;
+    color: #fff;
+}
+table thead tr th .ng2-smart-action.ng2-smart-action-add-add.ng-star-inserted {
+    color: #fff;
+}
+table thead tr th .ng2-smart-action.ng2-smart-action-add-add, table thead tr th .ng2-smart-action.ng2-smart-action-add-add > span {
+    color: #fff;
+}
+table thead tr th .ng2-smart-title, table thead tr th .ng2-smart-title > * > a {
+    color: #fff !important;
+}
+table thead tr th * > div > * > a {
+    color: #fff;
+}
+table thead tr th:nth-child(n + 2) {
+    border-left: 2px solid var(--color200);
+}
+table tbody {
+    border: 2px solid var(--color700);
+}
+table tbody tr.selected {
+    background-color: var(--color100) !important;
+}
+table tbody tr td {
+    font-size: 0.875em !important;
+    margin: 0 !important;
+    padding: 0.2em 0.5em !important;
+}
+table tbody tr td:nth-child(n + 2) {
+    border-left: 1px solid var(--color700);
+}
+table tbody tr td *:nth-child(2) > a {
+    color: var(--primary);
+}
+table + * {
+    justify-content: center !important;
+    margin-top: 1em;
+}
+table + * nav > ul > li.active > span.page-link {
+    color: #fff;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+table + * nav > ul > li a.page-link:focus {
+    box-shadow: 0 0 0 0.2rem var(--color200);
+}
+table + * nav > ul > li a.page-link:hover {
+    background-color: var(--color100);
+}
+table + * nav > ul > li a {
+    color: var(--primary) !important;
+}
+.mat-card-title {
+    color: var(--primary);
+}
+.form-control {
+    border: 1px solid var(--color200);
+}
+.form-control:focus {
+    border-color: var(--color500);
+    box-shadow: 0 0 0 0.2rem var(--color100);
+}
+.swal2-icon.swal2-info {
+    border-color: var(--color200) !important;
+    color: var(--primary) !important;
+}
+.mat-card {
+    width: 100%;
+}
