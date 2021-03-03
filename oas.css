@@ -9,12 +9,12 @@ body {
 .main-container {
     margin-bottom: 1rem;
     padding: 1rem;
-    width: 100vw;
+    width: 98vw;
     display: flex;
     flex-wrap: nowrap;
     position: fixed;
     top: 5.6rem;
-    height: calc(-165px + 100vh);
+    height: calc(-199px + 100vh);
     left: 0;
     overflow: auto;
 }
