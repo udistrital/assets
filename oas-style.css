@@ -158,9 +158,9 @@ md-divider {
 
 .page-header {
   padding-bottom: 0px;
-  margin: 20px;
-  border-bottom: 1px solid var(--color100);
-  color: var(--color100);
+  margin: 1rem;
+  border-bottom: 1px solid var(--color300);
+  color: var(--color800);
 }
 
 /*da color azulado al margen inferior de donde se utilice la etiqueta*/

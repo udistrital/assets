@@ -1,5 +1,5 @@
 :root {
-  --primary: #731514;
+  --primary: #731514!important;
 
   --color0: #F3EBEB;
   --color1: #EBDDDD;
@@ -34,4 +34,99 @@
   --others-main: #42659D;
   --others-accent: #143873;
 
+  /* Configuración de colores primarios */
+  --md-primary-50: #eee3e3;
+  --md-primary-100: #d5b9b9;
+  --md-primary-200: #b98a8a;
+  --md-primary-300: #9d5b5b;
+  --md-primary-400: #883837;
+  --md-primary-500: #731514;
+  --md-primary-600: #6b1212;
+  --md-primary-700: #600f0e;
+  --md-primary-800: #560c0b;
+  --md-primary-900: #430606;
+  --md-primary-A100: #ff7979;
+  --md-primary-A200: #ff4646;
+  --md-primary-A400: #ff1313;
+  --md-primary-A700: #f80000;
+
+  /* Contraste para colores primarios */
+  --md-primary-contrast-50: #000000;
+  --md-primary-contrast-100: #000000;
+  --md-primary-contrast-200: #000000;
+  --md-primary-contrast-300: #ffffff;
+  --md-primary-contrast-400: #ffffff;
+  --md-primary-contrast-500: #ffffff;
+  --md-primary-contrast-600: #ffffff;
+  --md-primary-contrast-700: #ffffff;
+  --md-primary-contrast-800: #ffffff;
+  --md-primary-contrast-900: #ffffff;
+  --md-primary-contrast-A100: #000000;
+  --md-primary-contrast-A200: #ffffff;
+  --md-primary-contrast-A400: #ffffff;
+  --md-primary-contrast-A700: #ffffff;
+
+  /* Configuración de colores de acento */
+  --md-accent-50: #e3e7ee;
+  --md-accent-100: #b9c3d5;
+  --md-accent-200: #8a9cb9;
+  --md-accent-300: #5b749d;
+  --md-accent-400: #375688;
+  --md-accent-500: #143873;
+  --md-accent-600: #12326b;
+  --md-accent-700: #0e2b60;
+  --md-accent-800: #0b2456;
+  --md-accent-900: #061743;
+  --md-accent-A100: #7996ff;
+  --md-accent-A200: #466eff;
+  --md-accent-A400: #1346ff;
+  --md-accent-A700: #0036f8;
+
+  /* Contraste para colores de acento */
+  --md-accent-contrast-50: #000000;
+  --md-accent-contrast-100: #000000;
+  --md-accent-contrast-200: #000000;
+  --md-accent-contrast-300: #ffffff;
+  --md-accent-contrast-400: #ffffff;
+  --md-accent-contrast-500: #ffffff;
+  --md-accent-contrast-600: #ffffff;
+  --md-accent-contrast-700: #ffffff;
+  --md-accent-contrast-800: #ffffff;
+  --md-accent-contrast-900: #ffffff;
+  --md-accent-contrast-A100: #000000;
+  --md-accent-contrast-A200: #ffffff;
+  --md-accent-contrast-A400: #ffffff;
+  --md-accent-contrast-A700: #ffffff;
+
+  /* Configuración de colores de advertencia */
+  --md-warning-50: #fff7e8;
+  --md-warning-100: #feebc5;
+  --md-warning-200: #fddd9f;
+  --md-warning-300: #fccf78;
+  --md-warning-400: #fcc55b;
+  --md-warning-500: #fbbb3e;
+  --md-warning-600: #fab538;
+  --md-warning-700: #faac30;
+  --md-warning-800: #f9a428;
+  --md-warning-900: #f8961b;
+  --md-warning-A100: #ffffff;
+  --md-warning-A200: #fffcf8;
+  --md-warning-A400: #ffe4c5;
+  --md-warning-A700: #ffd7ac;
+
+  /* Contraste para colores de advertencia */
+  --md-warning-contrast-50: #000000;
+  --md-warning-contrast-100: #000000;
+  --md-warning-contrast-200: #000000;
+  --md-warning-contrast-300: #000000;
+  --md-warning-contrast-400: #000000;
+  --md-warning-contrast-500: #000000;
+  --md-warning-contrast-600: #000000;
+  --md-warning-contrast-700: #000000;
+  --md-warning-contrast-800: #000000;
+  --md-warning-contrast-900: #000000;
+  --md-warning-contrast-A100: #000000;
+  --md-warning-contrast-A200: #000000;
+  --md-warning-contrast-A400: #000000;
+  --md-warning-contrast-A700: #000000;
 }
