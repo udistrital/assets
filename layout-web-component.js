@@ -98217,6 +98217,7 @@ function LoginComponent_ng_uui_load_6_Template(rf, ctx) { if (rf & 1) {
 class login_component_LoginComponent {
     constructor() {
         this.basePathAssets = 'https://pruebasassets.portaloas.udistrital.edu.co/';
+        //basePathAssets = 'http://127.0.0.1:8080/';
         this.isloading = false;
         this.loginEvent = new EventEmitter();
     }
@@ -98801,6 +98802,7 @@ const catalogo = {
 
 
 
+
 function OasComponent_ng_uui_login_1_Template(rf, ctx) { if (rf & 1) {
     const _r4 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "ng-uui-login", 3);
@@ -98865,47 +98867,57 @@ class oas_component_OasComponent {
         this.isLogin = false;
         this.userInfo = null;
         this.userInfoService = null;
+        this.initialized = false;
         this.title = 'app-client';
         this.countConstructor++;
-        console.warn('📌 OAS constructor ejecutado', this.countConstructor, 'veces');
+        console.warn('📌 OAS constructor ejecutado NUEVO', this.countConstructor, 'veces');
+        /*
+        
+    
         this.menuService.sidebar$.subscribe((opened) => (this.opened = opened));
         this.menuService.option$.subscribe((op) => {
-            this.countOptionEmit++;
-            console.warn('📌 OAS option emit ejecutado', this.countOptionEmit, 'veces');
-            setTimeout(() => (this.option.emit(op)), 100);
+          this.countOptionEmit++;
+          console.warn('📌 OAS option emit ejecutado', this.countOptionEmit, 'veces');
+    
+          setTimeout(() => (this.option.emit(op)), 100);
         });
         this.menuService.menu$.subscribe((menu) => {
-            this.countMenuEmit++;
-            console.warn('📌 OAS menu emit ejecutado', this.countMenuEmit, 'veces');
-            setTimeout(() => (this.menu.emit(menu)), 100);
+          this.countMenuEmit++;
+          console.warn('📌 OAS menu emit ejecutado', this.countMenuEmit, 'veces');
+    
+          setTimeout(() => (this.menu.emit(menu)), 100);
         });
-        this.autenticacionService.logout$.subscribe((logoutEvent) => {
-            this.countLogoutEmit++;
-            console.warn('📌 OAS logout emit ejecutado', this.countLogoutEmit, 'veces');
-            if (logoutEvent) {
-                this.logout.emit(logoutEvent);
+        this.autenticacionService.logout$.subscribe((logoutEvent: any) => {
+          this.countLogoutEmit++;
+          console.warn('📌 OAS logout emit ejecutado', this.countLogoutEmit, 'veces');
+    
+          if (logoutEvent) {
+            this.logout.emit(logoutEvent);
+          }
+        });
+        this.autenticacionService.user$.subscribe((data: any) => {
+          this.countUserEmit++;
+          console.warn('📌 OAS user emit ejecutado', this.countUserEmit, 'veces');
+          console.log("data: ", data);
+    
+          const isValid = data && data.user && data.userService;
+          console.log("isValid: ", isValid);
+          if (isValid) {
+            this.userInfo = data.user;
+            this.userInfoService = data.userService;
+            this.username = data.user?.email || '';
+            this.user.emit(data);
+            if (this.notificaciones) {
+              this.notificacionesService.init(this.NOTIFICACION_MID_WS, this.NOTIFICACIONES_CRUD, data);
             }
-        });
-        this.autenticacionService.user$.subscribe((data) => {
-            var _a;
-            this.countUserEmit++;
-            console.warn('📌 OAS user emit ejecutado', this.countUserEmit, 'veces');
-            const isValid = data && data.user && data.userService;
-            if (isValid) {
-                this.userInfo = data.user;
-                this.userInfoService = data.userService;
-                this.username = ((_a = data.user) === null || _a === void 0 ? void 0 : _a.email) || '';
-                this.user.emit(data);
-                if (this.notificaciones) {
-                    this.notificacionesService.init(this.NOTIFICACION_MID_WS, this.NOTIFICACIONES_CRUD, data);
-                }
-                if (this.menuApps) {
-                    this.menuAppService.init(catalogo[this.entorno], data);
-                }
-                this.isLogin = true;
-                this.isloading = true;
+            if (this.menuApps) {
+              this.menuAppService.init(catalogo[this.entorno], data);
             }
+            this.isLogin = true;
+            this.isloading = true;
+          }
         });
+        */
     }
     ngOnChanges(changes) {
         var _a;
@@ -98944,9 +98956,56 @@ class oas_component_OasComponent {
         console.log('📌 OAS logoutEvent ejecutado');
         this.autenticacionService.logout('action-event');
     }
+    /*
+    ngOnInit() {
+      this.countNgOnInit++;
+      console.warn('📌 OAS ngOnInit ejecutado', this.countNgOnInit, 'veces');
+    }
+    */
     ngOnInit() {
         this.countNgOnInit++;
         console.warn('📌 OAS ngOnInit ejecutado', this.countNgOnInit, 'veces');
+        this.menuService.sidebar$.subscribe((opened) => (this.opened = opened));
+        this.menuService.option$.subscribe((op) => {
+            this.countOptionEmit++;
+            console.warn('📌 OAS option emit ejecutado', this.countOptionEmit, 'veces');
+            setTimeout(() => (this.option.emit(op)), 100);
+        });
+        this.menuService.menu$.subscribe((menu) => {
+            this.countMenuEmit++;
+            console.warn('📌 OAS menu emit ejecutado', this.countMenuEmit, 'veces');
+            setTimeout(() => (this.menu.emit(menu)), 100);
+        });
+        this.autenticacionService.logout$.subscribe((logoutEvent) => {
+            this.countLogoutEmit++;
+            console.warn('📌 OAS logout emit ejecutado', this.countLogoutEmit, 'veces');
+            if (logoutEvent) {
+                this.logout.emit(logoutEvent);
+            }
+        });
+        this.autenticacionService.user$
+            .pipe(filter((data) => !!data && !!data.user && !!data.userService), // solo si trae info válida
+        take(1) // solo la primera vez que pasa el filtro
+        ).subscribe((data) => {
+            var _a;
+            this.countUserEmit++;
+            console.warn('📌 OAS user emit ejecutado', this.countUserEmit, 'veces');
+            console.log("data: ", data);
+            if (data && data.user && data.userService) {
+                this.userInfo = data.user;
+                this.userInfoService = data.userService;
+                this.username = ((_a = data.user) === null || _a === void 0 ? void 0 : _a.email) || '';
+                this.user.emit(data);
+                if (this.notificaciones) {
+                    this.notificacionesService.init(this.NOTIFICACION_MID_WS, this.NOTIFICACIONES_CRUD, data);
+                }
+                if (this.menuApps) {
+                    this.menuAppService.init(catalogo[this.entorno], data);
+                }
+                this.isLogin = true;
+                this.isloading = true;
+            }
+        });
     }
 }
 oas_component_OasComponent.ɵfac = function OasComponent_Factory(t) { return new (t || oas_component_OasComponent)(ɵɵdirectiveInject(configuracion_service_ConfiguracionService), ɵɵdirectiveInject(notificaciones_service_NotificacionesService), ɵɵdirectiveInject(menuAplicaciones_service_MenuAplicacionesService), ɵɵdirectiveInject(menu_service_MenuService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(implicit_autentication_service_ImplicitAutenticationService)); };
